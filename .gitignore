@@ -1,0 +1,22 @@
+/vendor/
+/.phpunit.cache/
+/.phpunit.result.cache
+*.descriptor.bin
+*.descriptor.bin.tmp
+composer.lock
+
+# Code coverage
+/coverage.xml
+/coverage/
+/.phpunit.cache/
+
+# Static analysis
+/.phpstan.cache/
+
+# IDE
+/.idea/
+/.vscode/
+/.codebuddy/
+
+# OpenSpec
+/openspec/
