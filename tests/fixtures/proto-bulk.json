@@ -1,0 +1,15 @@
+{
+    "$schema": "https://openspec.dev/proto-lint/v1/bulk.json",
+    "source_dir": "tests/fixtures/php8",
+    "default_target_proto": "tests/fixtures/proto/user_service.proto",
+    "services": {
+        "UserService": {
+            "methods": {
+                "getUser": {},
+                "updateUser": {
+                    "mapping_file": "tests/fixtures/proto-mapping.json"
+                }
+            }
+        }
+    }
+}

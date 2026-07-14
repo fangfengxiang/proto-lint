@@ -12,6 +12,7 @@ composer.lock
 
 # Static analysis
 /.phpstan.cache/
+/.php-cs-fixer.cache
 
 # IDE
 /.idea/

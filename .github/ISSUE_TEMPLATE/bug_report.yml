@@ -1,0 +1,68 @@
+name: Bug Report
+description: Report a bug to help us improve proto-lint
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below.
+
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP Version
+      description: Run `php -v` and paste the version line
+      placeholder: 'PHP 8.3.3 (cli)'
+    validations:
+      required: true
+
+  - type: input
+    id: protoc-version
+    attributes:
+      label: protoc Version
+      description: Run `protoc --version` and paste the output
+      placeholder: 'libprotoc 27.3'
+    validations:
+      required: true
+
+  - type: input
+    id: proto-lint-version
+    attributes:
+      label: proto-lint Version
+      description: Run `./bin/proto-lint --version` and paste the output
+      placeholder: 'proto-lint 0.1.0'
+    validations:
+      required: true
+
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      description: The exact command you ran
+      placeholder: './bin/proto-lint check --config="proto-bulk.json"'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened? Please include error output.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal Reproducible Example
+      description: Share a minimal `.proto` + PHP + config that reproduces the issue
+      render: shell
