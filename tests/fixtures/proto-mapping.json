@@ -1,0 +1,24 @@
+{
+    "$schema": "https://openspec.dev/php-proto-lint/v1/mapping.json",
+    "target_proto_files": ["tests/fixtures/proto/user_service.proto"],
+    "request": {
+        "payload": {
+            "user_id": 10001,
+            "name": "alice",
+            "data": {
+                "id": 10001,
+                "name": "alice",
+                "email": "alice@example.com"
+            }
+        },
+        "field_class_mappings": {
+            "data": "PhpProtoLint\\Test\\Fixture\\Dto\\UserMessage"
+        }
+    },
+    "response": {
+        "payload": {
+            "success": true
+        },
+        "field_class_mappings": {}
+    }
+}

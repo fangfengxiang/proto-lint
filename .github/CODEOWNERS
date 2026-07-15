@@ -1,0 +1,12 @@
+# Default owners — fallback for everything not explicitly assigned
+* @fangfengxiang
+
+# CI/CD and GitHub configuration
+/.github/ @fangfengxiang
+
+# Core domain logic
+/src/Domain/ @fangfengxiang
+/src/Linter/ @fangfengxiang
+
+# Injector engine
+/src/Injector/ @fangfengxiang

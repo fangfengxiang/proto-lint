@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package example;
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+  rpc UpdateUser(UpdateUserRequest) returns (UpdateUserResponse);
+}
+
+message GetUserRequest {
+  int64 user_id = 1;
+}
+
+message GetUserResponse {
+  int64 id = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message UpdateUserRequest {
+  int64 user_id = 1;
+  string name = 2;
+  UserMessage data = 3;
+}
+
+message UpdateUserResponse {
+  bool success = 1;
+}
+
+message UserMessage {
+  int64 id = 1;
+  string name = 2;
+  string email = 3;
+}
